@@ -3,7 +3,7 @@ var myImage:
 
  function preload() {
    mySound = loadSound('dancin.mp3');  // Loads the sound file into the variable
-   my Image = loadImage('dance.jpg'); //Loads the image
+   //my Image = loadImage('dance.jpg'); //Loads the image
  }
 
  function setup() {
@@ -12,6 +12,6 @@ var myImage:
    // Notice that you have to put the variable name in front of the functions
    mySound.setVolume(0.1);
    mySound.play();
-   image(myImage,640,400)
+   //image(myImage,640,400)
  }
 
