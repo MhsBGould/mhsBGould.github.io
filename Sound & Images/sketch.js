@@ -3,7 +3,7 @@ var img; //Creates a variable to hold the image
 
   function preload() {
     mySong = loadSound('song.mp3');  // Loads the sound file into the variable
-    img = loadImage('giphy.gif');
+    img = createImage('giphy.gif');
   }
 
   function setup() {
@@ -16,7 +16,6 @@ var img; //Creates a variable to hold the image
   function draw() {
      imageMode(CENTER);
     image(img, 640, 400);
-    noLoop();
   }
  function mousePressed() {
    background(random(0,255),random(0,255),random(0,255));
