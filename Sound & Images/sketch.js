@@ -13,3 +13,4 @@ var img; //Creates a variable to hold the image
     mySong.setVolume(0.1);
     mySong.play();
   }
+
