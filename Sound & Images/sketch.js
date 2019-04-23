@@ -16,6 +16,7 @@ var img; //Creates a variable to hold the image
   function draw() {
      imageMode(CENTER);
     image(img, 640, 400);
+    noLoop();
   }
  function mousePressed() {
    background(random(0,255),random(0,255),random(0,255));
