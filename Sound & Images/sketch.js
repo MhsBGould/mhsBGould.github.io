@@ -1,4 +1,5 @@
 var mySong; // Creates a variable to hold the sound
+var img; //Creates a variable to hold the image
 
   function preload() {
     mySong = loadSound('song.mp3');  // Loads the sound file into the variable
