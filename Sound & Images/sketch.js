@@ -17,6 +17,5 @@ var img, loadimg; //Creates a variable to hold the image
   }
 
   function draw() {
-     imageMode(CENTER);
      img.position(640, 400);
   }
