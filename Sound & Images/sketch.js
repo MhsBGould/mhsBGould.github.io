@@ -8,7 +8,7 @@ var img, loadimg; //Creates a variable to hold the image
   }
 
   function setup() {
-    createCanvas(1280,800);
+    createCanvas(windowWidth,windowHeight);
      background(random(0,255),random(0,255),random(0,255));
 
     // Notice that you have to put the variable name in front of the functions
@@ -17,5 +17,5 @@ var img, loadimg; //Creates a variable to hold the image
   }
 
   function draw() {
-     img.position(300, 300);
+     img.position(windowWIdth-600, winodwHeight-700);
   }
