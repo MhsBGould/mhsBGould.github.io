@@ -17,5 +17,5 @@ var img, loadimg; //Creates a variable to hold the image
   }
 
   function draw() {
-     img.position(windowWIdth-600, winodwHeight-700);
+     img.position(windowWIdth, winodwHeight);
   }
