@@ -20,5 +20,5 @@ var bg;
 
   function draw() {
      background(bg);
-     img.position(0,0);
+     img.position(windowWidth/2,windowHeight/4);
   }
