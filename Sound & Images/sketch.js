@@ -3,8 +3,8 @@ var img, loadimg; //Creates a variable to hold the image
 
   function preload() {
     mySong = loadSound('song.mp3');  // Loads the sound file into the variable
-    loadimg = loadImage('giphy2.gif');
-    img = createImg('giphy2.gif');
+    loadimg = loadImage('source.gif');
+    img = createImg('source.gif');
   }
 
   function setup() {
