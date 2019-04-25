@@ -12,7 +12,7 @@ var img, loadimg; //Creates a variable to hold the image
      background(random(0,255),random(0,255),random(0,255));
 
     // Notice that you have to put the variable name in front of the functions
-    mySong.setVolume(0.1);
+    mySong.setVolume(1);
     mySong.play();
   }
 
