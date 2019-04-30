@@ -26,7 +26,7 @@ function draw() {
   if (level===0) {
     textSize(50);
     textFont(myFont)//text font
-    text('PRESS ENTER TO START',x/3.4,y/2)  //Makes text appear
+    text('PRESS ENTER TO START',x/3.7,y/2)  //Makes text appear
     if (keyTyped(ENTER)) {
       level+=1;
     }
