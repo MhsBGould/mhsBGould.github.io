@@ -27,7 +27,7 @@ function draw() {
     textSize(50);
     textFont(myFont)//text font
     text('PRESS ENTER TO START',x/3.4,y/2)  //Makes text appear
-    if (keyIsDown(ENTER)) {
+    if (keyTyped(ENTER)) {
       level+=1;
     }
   }
@@ -41,7 +41,7 @@ function draw() {
     textFont(myFont)//text font
     text('Welcome to the game',x/3.7,y/2.7)//Make text appear
     text('press ENTER to start your own adventure',x/7,y/2.4)   //Makes text appear
-    if (keyIsDown(ENTER)) {
+    if (keyTyped(ENTER)) {
       level+=1;
     }
   }
@@ -51,7 +51,7 @@ function draw() {
     background(bg);
     image(hero,x/10,y/2);
 
-    if (keyIsDown(RIGHT_ARROW)) {
+    if (keyTyped(RIGHT_ARROW)) {
       x+=5
     }
 
