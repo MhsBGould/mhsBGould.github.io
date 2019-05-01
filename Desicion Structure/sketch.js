@@ -9,7 +9,7 @@ var level = 0;
 
 function preload(){
    bg = loadImage('8bit.png');
-   hero = loadImage('yoshi.png')
+   hero = loadImage('man.png')
    bubble = loadImage('bubble.png')
    myFont = loadFont('eight-bit-dragon.otf')
 }
@@ -26,32 +26,27 @@ function draw() {
   if (level===0) {
     textSize(50);
     textFont(myFont)//text font
-    text('PRESS ENTER TO START',x/3.7,y/2)  //Makes text appear
-    if (keyIsPressed(ENTER)) {
+    text('PRESS ENTER TO START',x/4,y/2)  //Makes text appear
+  }
+    if (keyIsDown(ENTER)){
       level+=1;
     }
-  }
 
   /*------------------INSTRUCTIONS------------------------*/
-  else if (level===1) {
+   if (level===1) {
     background(bg);
-    image(hero,x/10,y/2);
-    image(bubble,x/-30,y/10);
+    image(hero,x/7,y/1.5);
+    image(bubble,x/-70,y/6);
     textSize(25);
     textFont(myFont)//text font
-    text('Welcome to the game',x/3.7,y/2.7)//Make text appear
-    text('press ENTER to start your own adventure',x/7,y/2.4)   //Makes text appear
-    if (keyIsPressed(ENTER)) {
-      level+=1;
-    }
+    text('Welcome to the game',x/3.8,y/2.3)//Make text appear
+    text('press ENTER to start your own adventure',x/7,y/2.1)   //Makes text appear
   }
 
   /*------------------GAME------------------------*/
-  else if (level===2) {
-    background(bg);
-    image(hero,x/10,y/2);
+function keyTyped() {
+  if (level === 2)
 
 
   }
-  print(level)
 }
