@@ -14,10 +14,12 @@ var bgCave;
   var circle;
   var textbox;
   var door;
+  var arrow;
 //Other
 var myFont;
   //Levels
   var level = 0;
+  var firstlevel;
 
 function preload(){
    bg = loadImage('8bit.png');
@@ -29,6 +31,7 @@ function preload(){
    circle = loadImage('circle.png')
    textbox = loadImage('textbox.png')
    door = loadImage('door.png')
+   arrow = loadImage('arrow.png')
 }
 
 function setup() {
@@ -38,10 +41,10 @@ function setup() {
 }
 
 function keyTyped() {
-    if (keyCode === ENTER) {
+    if (keyCode === ENTER &&(level===0 || level===1 || level===2)) {
       level+=1;
     }
-  if (key === 'w'){
+  if (key === 'w' &&(level===3)){
   level = 4;
   }
 }
@@ -80,9 +83,6 @@ function draw() {
      background(bg);
      image(skeleton,x/2-120,y/2+90);
      text('W', x/2.09,y/1.5)
-     if(keyCode === ENTER){
-       level+=0
-     }
 
    }
     /*------------------Tutorial/Start------------------------*/
@@ -103,12 +103,19 @@ function draw() {
       }
 
       if(posX > x/1.5){
-        level+=1;
+        level = firstlevel;
       }
     }
-    if (level===5){
+    if (level===firstlevel){
       background(bgCave);
+      image(arrow,x/2,y/1.5,530/5,270/5);
       image(skeleton, posX2,y/1.34);
+      image(circle,0+x/60,0+y/40,140,140);//Baclground of assistant
+      image(assistant,0+x/30,0+y/20,100,100);
+      image(textbox,0+x/10,0+y/-55);
+      text('Welcome to your first desicion,',x/4.8,y/10);
+      text('Press the RIGHT or LEFT ARROW to move,',x/5.8,y/7.5);
+      text('move past one of the arrows to advance',x/6,y/6);
 
       if (keyIsDown(RIGHT_ARROW)) {
         posX2+=5
@@ -120,7 +127,7 @@ function draw() {
       if(posX2 < 200){
         background(0);
     }
-      if(posX2 > 1080){
+      if(posX2 > 1080-192){
         background(0);
     }
   }
