@@ -21,6 +21,7 @@ function setup() {
 }
 
 function draw() {
+  //Rectangle and positioning
   rectMode(CENTER)
   background(127);
   fill(255);
