@@ -1,5 +1,7 @@
 /* Mouse following using built-in variables
 Brady*/
+
+//Variable for sizr
 let size = 50;
 
 function setup() {
@@ -7,11 +9,12 @@ function setup() {
 }
 
 function draw() {
-  line(mouseX, mouseY, 20, 20); // Draw a line
+  //Draw line and rectangle
+  line(mouseX, mouseY, 20, 20); // Draw a line with one point that does not move
   rectMode(CENTER)
-  rect(mouseX, mouseY,size,size);
+  rect(mouseX, mouseY,size,size);\
+  
   if (mouseIsPressed) {
-    
     // When the mouse button is pressed
     // change the colour randomly
     fill(random(255), random(255), random(255));
