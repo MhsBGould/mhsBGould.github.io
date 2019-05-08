@@ -147,7 +147,7 @@ function draw() {
     if (level===4){
       background(bg);
       image(door,x/1.5,y/1.9,325,325);
-      image(circle,0+x/60,0+y/40,140,140);//Baclground of assistant
+      image(circle,0+x/60,0+y/40,140,140);
       image(hero,posX,y/2+90,heroSize,heroSize);
       image(assistant,0+x/30,0+y/20,100,100);
       image(textbox,0+x/10,0+y/-55);
@@ -169,7 +169,7 @@ function draw() {
       background(bgHome);
       image(house,x/4.5,y/5,366/1.2,309/1.2);
       image(hero, posX2,y/1.45,heroSize,heroSize);
-      image(circle,0+x/60,0+y/40,140,140);//Background of assistant
+      image(circle,0+x/60,0+y/40,140,140);
       image(assistant,0+x/30,0+y/20,100,100);
       image(textbox,0+x/10,0+y/-55);
       text('Welcome to your home,',x/4,y/10);
@@ -180,7 +180,7 @@ function draw() {
     background(bgHome);
     image(house,x/4.5,y/5,366/1.2,309/1.2);
     image(hero, posX2,y/1.45,heroSize,heroSize);
-    image(circle,0+x/60,0+y/40,140,140);//Baclground of assistant
+    image(circle,0+x/60,0+y/40,140,140);
     image(assistant,0+x/30,0+y/20,100,100);
     image(textbox,0+x/10,0+y/-55);
     text('Your home shows your current progress,',x/6.1,y/10);
@@ -193,7 +193,7 @@ if (level===6){
   image(house,x/4.5,y/5,366/1.2,309/1.2);
   image(arrow,x/1.4,y/1.3,530/5,270/5);
   image(hero, posX2,y/1.45,heroSize,heroSize);
-  image(circle,0+x/60,0+y/40,140,140);//Baclground of assistant
+  image(circle,0+x/60,0+y/40,140,140);
   image(assistant,0+x/30,0+y/20,100,100);
   image(textbox,0+x/10,0+y/-55);
   text('This is your first desicion,',x/4.6,y/10);
@@ -218,7 +218,7 @@ if (level===6){
     if (level===7){
       background(bgHouse);
       image(hero, posX3,y/2,heroSize*1.8,heroSize*1.8);
-      image(circle,0+x/60,0+y/40,140,140);//Background of assistant
+      image(circle,0+x/60,0+y/40,140,140);
       image(assistant,0+x/30,0+y/20,100,100);
       image(textbox,0+x/10,0+y/-55);
       text('This is the inside of your house,',x/4.8,y/10);
@@ -242,7 +242,7 @@ if (level===6){
       if (level===8){
         background(bgHome);
         image(hero,200,y/1.45,heroSize,heroSize);
-        image(circle,0+x/60,0+y/40,140,140);//Background of assistant
+        image(circle,0+x/60,0+y/40,140,140);
         image(assistant,0+x/30,0+y/20,100,100);
         image(textbox,0+x/10,0+y/-55);
         text('You have come to a decision,',x/4.4,y/10);
@@ -252,7 +252,7 @@ if (level===6){
       if (level===9){
         background(bgHome);
         image(hero,200,y/1.45,heroSize,heroSize);
-        image(circle,0+x/60,0+y/40,140,140);//Background of assistant
+        image(circle,0+x/60,0+y/40,140,140);
         image(assistant,0+x/30,0+y/20,100,100);
         image(textbox,0+x/10,0+y/-55);
         image(button,x/1.5,100);
@@ -266,15 +266,15 @@ if (level===6){
         text('Mountain',x/1.41,190);//A
         text('Bridge',x/1.36,390);//S
         text('Ocean',x/1.36,590);//D
-        text('A',x/1.05,190);//10 is the cooresponding level
-        text('S',x/1.05,390);//11 is the cooresponding level
+        text('A',x/1.05,190);//11 is the cooresponding level
+        text('S',x/1.05,390);//10 is the cooresponding level
         text('D',x/1.05,590);//12 is the cooresponding level
         textSize(20);
       }
       if (level===10){
         background(bgBridge);
         image(textbox,0+x/10,0+y/-55);
-        image(circle,0+x/60,0+y/40,140,140);//Background of assistant
+        image(circle,0+x/60,0+y/40,140,140);
         image(assistant,0+x/30,0+y/20,100,100);
         text('You chose BRIDGE,',x/4,y/10);
         text('You spot a train in the distance,',x/5.3,y/7.5);
@@ -283,7 +283,7 @@ if (level===6){
       if (level===11){
         background(bgWin);
         image(textbox,0+x/10,0+y/-55);
-        image(circle,0+x/60,0+y/40,140,140);//Background of assistant
+        image(circle,0+x/60,0+y/40,140,140);
         image(assistant,0+x/30,0+y/20,100,100);
         text('You chose MOUNTAINS,',x/4.3,y/10);
         text('You attempt to climb the mountain,',x/5.3,y/7.5);
@@ -292,7 +292,7 @@ if (level===6){
       if (level===12){
         background(bgOcean);
         image(textbox,0+x/10,0+y/-55);
-        image(circle,0+x/60,0+y/40,140,140);//Background of assistant
+        image(circle,0+x/60,0+y/40,140,140);
         image(assistant,0+x/30,0+y/20,100,100);
         text('You chose OCEAN,',x/4,y/10);
         text('You spot rocky islands in the distance,',x/5.8,y/7.5);
@@ -302,7 +302,7 @@ if (level===6){
       if (level===13){
         background(bgOcean);
         image(textbox,0+x/10,0+y/-55);
-        image(circle,0+x/60,0+y/40,140,140);//Background of assistant
+        image(circle,0+x/60,0+y/40,140,140);
         image(assistant,0+x/30,0+y/20,100,100);
         text('You forget that you not a',x/4.4,y/10);
         text('great swimmer, after struggling you',x/5.8,y/7.5);
@@ -318,7 +318,7 @@ if (level===6){
       if (level===15){
         background(bgBridge);
         image(textbox,0+x/10,0+y/-55);
-        image(circle,0+x/60,0+y/40,140,140);//Background of assistant
+        image(circle,0+x/60,0+y/40,140,140);
         image(assistant,0+x/30,0+y/20,100,100);
         text('Saldy....,',x/3.3,y/10);
         text('You could not outrun the train and,',x/5.3,y/7.5);
@@ -334,7 +334,7 @@ if (level===6){
       if (level===17){
         background(bgWin);
         image(textbox,0+x/10,0+y/-55);
-        image(circle,0+x/60,0+y/40,140,140);//Background of assistant
+        image(circle,0+x/60,0+y/40,140,140);
         image(assistant,0+x/30,0+y/20,100,100);
         text('But you lose your balance and,',x/4.7,y/10);
         text('tumble to the bottom of the ,',x/4.9,y/7.5);
@@ -343,7 +343,7 @@ if (level===6){
       if (level===18){
           background(bgWin);
           image(textbox,0+x/10,0+y/-55);
-          image(circle,0+x/60,0+y/40,140,140);//Background of assistant
+          image(circle,0+x/60,0+y/40,140,140);
           image(assistant,0+x/30,0+y/20,100,100);
           text('Luckily...,',x/3.3,y/10);
           text('you barely survive and make your way,',x/5.9,y/7.5);
@@ -359,7 +359,7 @@ if (level===6){
         if (level===20){
         background(bgHouse);
         image(hero, posX3,y/2,heroSize*1.8,heroSize*1.8);
-        image(circle,0+x/60,0+y/40,140,140);//Background of assistant
+        image(circle,0+x/60,0+y/40,140,140);
         image(assistant,0+x/30,0+y/20,100,100);
         image(textbox,0+x/10,0+y/-55);
         image(scroll,x/1.95,y/2.93,150*2,100*2)
