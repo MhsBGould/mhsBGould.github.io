@@ -5,11 +5,11 @@ March 18, 2019
 */
 
 function setup() {
-//Create the canvas
-createCanvas(1200,870);
-background(135, 206, 235)
-ellipseMode(CENTER)
-}
+  //Create the canvas
+  createCanvas(1200,870);
+  background(135, 206, 235)
+  ellipseMode(CENTER)
+ }
 
 function draw() {
   //set the width of the house
@@ -41,5 +41,4 @@ function draw() {
   rect(width/2+houseWidth/1.8+houseWidth/7, height/2+houseWidth/6, houseWidth/7, houseWidth/7);
   rect(width/2+houseWidth/1.8, height/2+houseWidth/6+houseWidth/7, houseWidth/7, houseWidth/7);
   rect(width/2+houseWidth/1.8+houseWidth/7, height/2+houseWidth/6+houseWidth/7, houseWidth/7, houseWidth/7);
-
 }
