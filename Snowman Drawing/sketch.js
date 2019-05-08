@@ -1,5 +1,5 @@
 function setup() {
-createCanvas(400,400)
+  createCanvas(400,400)
 }
 
 function draw() {
@@ -21,6 +21,6 @@ function draw() {
 
   //The Arms
   line(160, 200, 25, 199);//left arm
-line(240, 200, 75, 100);//right arm
+  line(240, 200, 75, 100);//right arm
 
 }
