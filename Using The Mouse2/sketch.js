@@ -1,6 +1,8 @@
 /* Mouse following using automatic function calls.
 Brady Gould*/
-  let size = 50;
+
+//Variable for size
+let size = 50;
 
 function setup() {
   var firstCanvas = createCanvas(600, 600);  // create a square window for drawing
@@ -15,8 +17,8 @@ function draw() {
 
 function mouseMoved() {
   // This function is called whenever the mouse is moved
-    background(127);
-  rect(mouseX, mouseY, size, size); // Draw a rectangle
+   background(127);
+   rect(mouseX, mouseY, size, size); // Draw a rectangle
 
 }
 
