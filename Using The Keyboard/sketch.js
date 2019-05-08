@@ -1,5 +1,5 @@
 //Global Variables
-let x = 200;;
+let x = 200;
 let y = 200;
 
 function setup() {
@@ -9,7 +9,7 @@ function setup() {
 
 
 function draw() {
-    background(127);
+   background(127);
   //Lines attached to square
   line(x-25,y-25,500,50);
   line(x-25,y+25,500,50);
@@ -20,7 +20,7 @@ function draw() {
   rectMode(CENTER)
   rect(x,y,50,50);
 
-  //Movement
+  //Movement and Random color changes
   if (keyIsDown(LEFT_ARROW)) {
     x -= 5;
       fill(random(0,255),0,0);
@@ -40,5 +40,4 @@ function draw() {
     y += 5;
     fill(random(0,255));
   }
-
 }
