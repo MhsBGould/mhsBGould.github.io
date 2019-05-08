@@ -14,7 +14,7 @@ function setup() {
 function draw() {
   //set the width of the house
   //change this variable to scale the house
-  let houseWidth = 300;
+  let houseWidth = 400;
 
   //Ground
   fill(0,128,0);
