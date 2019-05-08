@@ -9,11 +9,13 @@ function setup() {
 }
 
 function draw() {
-
-  let scale = 400;
+  //Variables
+  let scale = 400; // Use this to scale
   let x = width/2;
   let y = height/2;
   strokeWeight(2);
+   
+  //Functions
   drawears(x,y,scale);//Brady
   drawhead(x,y,scale);//Derek
   drawmouth(x,y,scale);//Liam & Derek
@@ -62,55 +64,55 @@ function drawhead(x,y,scale) {
 }
 
 function draweyes(x,y,scale) { //Brady
-//Bart's eyes
-stroke(0);
-ellipseMode(CENTER);
+   //Bart's eyes
+   stroke(0);
+   ellipseMode(CENTER);
 
-//eyebrows
-fill(255,220,40);
-ellipse(x-scale/4.5,y-scale/12,scale/4,scale/5);
-stroke(255,220,40);
-ellipse(x-scale/4.8,y-scale/12,scale/4,scale/4.4);
+   //eyebrows
+   fill(255,220,40);
+   ellipse(x-scale/4.5,y-scale/12,scale/4,scale/5);
+   stroke(255,220,40);
+   ellipse(x-scale/4.8,y-scale/12,scale/4,scale/4.4);
 
-fill(255,220,40);
-stroke(0);
-ellipse(x+scale/3.9,y-scale/10,scale/6.8);
-stroke(255,220,40);
-ellipse(x+scale/4,y-scale/10,scale/7,scale/6.5);
+   fill(255,220,40);
+   stroke(0);
+   ellipse(x+scale/3.9,y-scale/10,scale/6.8);
+   stroke(255,220,40);
+   ellipse(x+scale/4,y-scale/10,scale/7,scale/6.5);
 
 
-//Sclera 2
-stroke(0);
-fill(255);
-ellipse(x+scale/5.9,y,scale/3.2);
+   //Sclera 2
+  stroke(0);
+  fill(255);
+  ellipse(x+scale/5.9,y,scale/3.2);
 
-//Pupil 2
-fill(0);
-ellipse(x+scale/5.5,y,scale/35);
+   //Pupil 2
+   fill(0);
+   ellipse(x+scale/5.5,y,scale/35);
 
-//Sclera 1
-fill(255);
-ellipse(x-scale/5.9,y,scale/3.2);
+   //Sclera 1
+   fill(255);
+   ellipse(x-scale/5.9,y,scale/3.2);
 
-//Pupil 1
-fill(0);
-ellipse(x-scale/6.1,y,scale/35);
+   //Pupil 1
+   fill(0);
+   ellipse(x-scale/6.1,y,scale/35);
 }
 
 
 function drawnose(x,y,scale) { //Brady
-//Nose
-ellipseMode(CENTER);
-fill(255,220,40);
-ellipse(x,y+scale/9,scale/7);
+   //Nose
+   ellipseMode(CENTER);
+   fill(255,220,40);
+   ellipse(x,y+scale/9,scale/7);
 
-beginShape(TRIANGLES);
-fill(255,220,40);
-noStroke();
-vertex(x-scale/31, y+scale/10);
-vertex(x, y-scale/40);
-vertex(x+scale/31, y+scale/10);
-endShape(TRIANGLES);
+   beginShape(TRIANGLES);
+   fill(255,220,40);
+   noStroke();
+   vertex(x-scale/31, y+scale/10);
+   vertex(x, y-scale/40);
+   vertex(x+scale/31, y+scale/10);
+   endShape(TRIANGLES);
 }
 
 function drawears(x,y,scale){ //Brady
